@@ -7,13 +7,16 @@ async function buscarEDetalharNave() {
         Nome: ${nave.name}
         Modelo: ${nave.model}
         Fabricante: ${nave.manufacturer}
+        TamanhoCompara: ${nave.sizecomp = 100}
         `;
 
         console.log("Detalhes da Nave:");
         console.log(detalhesNave);
 
         const tamanhoTripulacao = parseInt(nave.crew);
-        if (tamanhoTripulacao > 100) {
+      
+        if (tamanhoTripulacao > nave.size) {
+
             console.log("Esta é uma nave grande.");
         } else {
             console.log("Esta é uma nave pequena.");
