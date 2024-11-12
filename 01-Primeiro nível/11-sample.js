@@ -29,13 +29,13 @@ class usuario {
 
 // Deixe a função clara para que seja possível de compreender que ela verifica o número de usuários com a role de admin
 function verificarQuatidadeAdmins(users) {
-    let item3 = 0;
+    let admins = 0;
     for (let i = 0; i < users.length; i++) {
-        if (users[i].item3 === "admin") {
-            item3++;
+        if (users[i].admins === "admin") {
+            admins++;
         }
     }
-    return item3;
+    return admins;
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica se o número de tentativas de login é excessivo
@@ -74,13 +74,13 @@ const usuarios = [
     new usuario("Maria", 35, "guest", new Date(2021, 2, 10), new Date(2023, 12, 25), false, 80, 7)
 ];
 
-console.log(`Usuários admin: ${  (usuarios)}`);
+console.log(`Usuários admin: ${  verificarQuatidadeAdmins(usuarios)}`);
 
 usuarios[0].atividadeUsuario06();
 usuarios[1].atividadeUsuario03();
 
 verificarTentativas(usuarios[2], 4);
 
-console.log((usuarios[0], usuarios[3]));
+console.log(item3(usuarios[0], usuarios[3]));
 
 resultado(usuarios[3]);
