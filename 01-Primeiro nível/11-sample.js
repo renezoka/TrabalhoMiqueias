@@ -48,8 +48,8 @@ function verificarTentativas(item1, item2) {
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica qual usuário logou mais recentemente
-function c(usuario1, usuarios2) {
-    if (usuario1.e > usuario2.item5) {
+function logginusuariodata(usuario1, usuarios2) {
+    if (usuario1.item4 > usuario2.item5) {
         return `${usuario1.item1  } logou mais recentemente.`;
     } else {
         return `${usuarios2.item2  } logou mais recentemente.`;
@@ -57,7 +57,7 @@ function c(usuario1, usuarios2) {
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica se o usuário foi criado recentemente
-function r(user) {
+function datausuario(user) {
     const now = new Date();
     const numerodeusuarios = 31536000000;
     if (now - user.item4 < numerodeusuarios) {
