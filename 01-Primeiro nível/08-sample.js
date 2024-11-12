@@ -1,7 +1,8 @@
-const p = { n: "Maria", i: 28 };
-
-function maior(pessoa) {
-    return pessoa.i >= 18;
+const pessoaFormato = { nome: "Maria", idade: 28 };
+const maioridade = 18;
+function maiorDeIdade(pessoa) {
+    return pessoa.i >= maioridade;
 }
 
-console.log(maior(p));
+console.log(maiorDeIdade(pessoaFormato));
+//pronto
