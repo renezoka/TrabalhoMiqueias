@@ -1,5 +1,5 @@
 function calcularFrete(distancia) {
-    let valorFrete = 10
+    const valorFrete = 10;
     return distancia * valorFrete;
 }
 

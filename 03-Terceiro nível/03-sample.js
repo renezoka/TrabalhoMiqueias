@@ -7,19 +7,20 @@ async function buscarEDetalharPlaneta(idPlaneta) {
         Nome: ${planeta.name}
         Clima: ${planeta.climate}
         População: ${planeta.population}
+        TAmanhoPopulaComp: ${planeta.PopulationSIze}
         `;
 
         console.log("Detalhes do Planeta:");
         console.log(detalhesPlaneta);
 
         const populacao = parseInt(planeta.population);
-        if (populacao > 1000000) {
+        if (populacao > planeta.PopulationSIze) {
             console.log("Este planeta é muito populado.");
         } else {
             console.log("Este planeta tem uma população pequena.");
         }
     } catch (erro) {
-        console.error('Erro ao buscar o planeta:', erro);
+        console.error("Erro ao buscar o planeta:", erro);
     }
 }
 
