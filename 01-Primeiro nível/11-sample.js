@@ -76,8 +76,8 @@ const ususarios = [
 
 console.log(`Usuários admin: ${  (ususarios)}`);
 
-ususarios[0].item1();
-ususarios[1].item2();
+ususarios[0].atividadeUsuario06();
+ususarios[1].atividadeUsuario03();
 
 lista(ususarios[2], 4);
 
