@@ -3,12 +3,13 @@
 function principal() {
     // eslint-disable-next-line no-magic-numbers
     const itens = [10, 20, 30, 40, 50];
-    let total = 0;
+    
     const ativo = 1;
     const inativo = 2;
     const multiplicador = 3;
         
     for (let i = 0; i < itens.length; i++) {
+        let total = 0;
         total += itens[i] * multiplicador;
     }
     const idUsuario = 42;
