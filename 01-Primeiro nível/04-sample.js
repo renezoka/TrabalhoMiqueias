@@ -1,6 +1,7 @@
-const fcr = function(a, b) {
-    return a + b;
+const soma = function(numero1, numero02) {
+    return numero1 + numero02;
 };
 
-const rsl = fcr(3, 5);
-console.log(rsl);
+const resultado = soma(3, 5);
+console.log(resultado);
+//pronta
