@@ -1,8 +1,9 @@
 class Gestor {
-    constructor(n, i) {
-        this.nome = n;
-        this.idade = i;
+    constructor(nomeNovo, idadeNova) {
+        this.nome = nomeNovo;
+        this.idade = idadeNova;
     }
 }
 
-const p = new Gestor("Lucas", 40);
+const pessoa = new Gestor("Lucas", 40);
+//pronta
