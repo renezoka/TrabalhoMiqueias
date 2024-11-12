@@ -79,7 +79,7 @@ console.log(`Usuários admin: ${  (ususarios)}`);
 ususarios[0].atividadeUsuario06();
 ususarios[1].atividadeUsuario03();
 
-lista(ususarios[2], 4);
+listaAtividade(ususarios[2], 4);
 
 console.log((ususarios[0], ususarios[3]));
 
