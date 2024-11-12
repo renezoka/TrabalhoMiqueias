@@ -57,30 +57,30 @@ function loginUsarioData(usuario1, usuarios2) {
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica se o usuário foi criado recentemente
-function datausuario(user) {
+function tempoDeUsuario(user) {
     const now = new Date();
-    const numerodeusuarios = 31536000000;
-    if (now - user.item4 < numerodeusuarios) {
+    const recorteDeTempo = 31536000000;
+    if (now - user.item4 < recorteDeTempo) {
         console.log("Usuário criado recentemente.");
     } else {
         console.log("Usuário antigo.");
     }
 }
 
-const ususarios = [
+const usuarios = [
     new usuario("Carlos", 25, "admin", new Date(2023, 1, 15), new Date(2024, 8, 1), true, 100, 2),
     new usuario("Ana", 30, "guest", new Date(2020, 4, 22), new Date(2024, 7, 31), true, 50, 3),
     new usuario("José", 29, "admin", new Date(2022, 10, 5), new Date(2024, 6, 10), false, 200, 5),
     new usuario("Maria", 35, "guest", new Date(2021, 2, 10), new Date(2023, 12, 25), false, 80, 7)
 ];
 
-console.log(`Usuários admin: ${  (ususarios)}`);
+console.log(`Usuários admin: ${  (usuarios)}`);
 
-ususarios[0].atividadeUsuario06();
-ususarios[1].atividadeUsuario03();
+usuarios[0].atividadeUsuario06();
+usuarios[1].atividadeUsuario03();
 
-verificarTentativas(ususarios[2], 4);
+verificarTentativas(usuarios[2], 4);
 
-console.log((ususarios[0], ususarios[3]));
+console.log((usuarios[0], usuarios[3]));
 
-resultado(ususarios[3]);
+resultado(usuarios[3]);
