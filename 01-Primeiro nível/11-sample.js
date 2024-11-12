@@ -28,7 +28,7 @@ class usuario {
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica o número de usuários com a role de admin
-function verificar(users) {
+function verificarQuatidadeAdmins(users) {
     let item3 = 0;
     for (let i = 0; i < users.length; i++) {
         if (users[i].item3 === "admin") {
