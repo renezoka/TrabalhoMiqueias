@@ -48,8 +48,8 @@ function verificarTentativas(item1, item2) {
 }
 
 // Deixe a função clara para que seja possível de compreender que ela verifica qual usuário logou mais recentemente
-function logginusuariodata(usuario1, usuarios2) {
-    if (usuario1.item4 > usuario2.item5) {
+function loginUsarioData(usuario1, usuarios2) {
+    if (usuario1.item5 > usuario2.item5) {
         return `${usuario1.item1  } logou mais recentemente.`;
     } else {
         return `${usuarios2.item2  } logou mais recentemente.`;
